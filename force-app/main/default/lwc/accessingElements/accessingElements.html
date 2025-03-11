@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Accessing Elements">
+        <div class="slds-var-m-around_medium">
+            <h1>Hello Everyone...</h1>
+            <template for:each={userNames} for:item="users">
+                <div class="name" key={user}>{users}</div>
+            </template>
+            <div class="child" lwc:dom="manual"></div>
+            <button onclick={fetchDetails}>Fetch</button>
+        </div>
+    </lightning-card>
+</template>

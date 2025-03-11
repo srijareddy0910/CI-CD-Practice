@@ -1,0 +1,33 @@
+<template>
+
+    <!-- using track property for object and array -->
+    <lightning-card title="@track">
+        <div class="slds-var-m-around_medium">
+            <lightning-input type="text" label="Enter City Name" onkeyup={trackHandler1}></lightning-input>
+            <div> {address1.city} is in {address1.state} state</div> 
+            <lightning-input type="text" label="Enter City" onkeyup={trackHandler2}></lightning-input>
+            <div>{address2} are the names</div>
+        </div>
+    </lightning-card>
+
+    <!-- without using track property for object and array=?? -->
+    <lightning-card title="Without using @track">
+        <div class="slds-var-m-around_medium">
+            <lightning-input type="text" label="Enter Chocolate Name" onkeyup={handler1}></lightning-input>
+            <div>{snacks1.chocolate} is a chocolate</div>
+            <lightning-input type="text" label="Enter Chocolate" onkeyup={handler2}></lightning-input>
+            <div>{snacks2} are the snacks</div>
+        </div>
+    </lightning-card>
+
+    <!-- Getter -->
+    <lightning-card title="Getter">
+        <div class="slds-var-m-around_medium">
+            <div>The first user name is {firstUser}</div>
+            <div>The first user is {firUser}</div>
+            <div>The sum of {num1} and {num2} is {sumOfNum}</div>
+            <div>The sum is {num3}</div>
+        </div>
+    </lightning-card>
+    
+</template>

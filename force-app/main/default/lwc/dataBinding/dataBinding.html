@@ -1,0 +1,30 @@
+<template>
+     <!--One way Binding-->
+    <lightning-card title="One way Binding">
+        <div class="slds-m-around_medium">
+            <div> Name: {name}</div>
+            <div> College: {college}</div>
+            <div> Course: {course}</div>
+            <div> Location: {location}</div>
+        </div>
+    </lightning-card>
+
+    <!--Two way Binding-->
+     <lightning-card title="Two way Binding">
+        <div class="slds-m-around_medium">
+            <lightning-input type="text" label="Enter the designation" onchange={handler1}></lightning-input>
+                    <div>{Name} is a {Designation}</div>
+            <lightning-button label="Click" onclick={handler2}></lightning-button>
+        </div>
+    </lightning-card>
+
+     <!-- Normal binding and Two way binding -->
+     <lightning-card title="One and Two way binding">
+        <div class="slds-var-m-around_medium">
+            <lightning-input type="text" label="Enter the title" onkeyup={changeHandler}></lightning-input>
+            <div>Hello World</div>
+            <div>{name} is a {title}</div>
+        </div>
+    </lightning-card>
+    
+</template>
